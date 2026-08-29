@@ -81,7 +81,15 @@
     <link rel="preconnect" href="https://api-90mais3.vercel.app">
 
     <!--  PERFORMANCE: Favicon em WebP -->
-    <link rel="icon" type="image/webp" href="src/img/logo.webp">
+    <link rel="icon" href="src/img/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="src/img/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#c9a227">
+
+<link rel="stylesheet" href="src/css/cookie-consent.css">
 
     <!--  PERFORMANCE: Fontes carregadas sem bloquear a renderização inicial.
          O preload busca o CSS da fonte em paralelo com o resto da página;
@@ -499,6 +507,7 @@
     <!-- Scripts: carrinho.js (sacola compartilhada com produto.html) + script.js (catálogo + extras) -->
     <script src="src/js/carrinho.js"></script>
     <script src="src/js/script.js"></script>
+    <script src="src/js/cookie-consent.js" defer></script>
 
     <script>
         // Loading screen
