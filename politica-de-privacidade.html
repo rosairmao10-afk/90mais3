@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+<title>Política de Privacidade e Cookies | 90+3 Camisas Tailandesas</title>
+<meta name="description" content="Como a 90+3 usa cookies e trata seus dados, e como você pode gerenciar suas preferências a qualquer momento.">
+
+<link rel="icon" href="src/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="src/img/favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="src/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#c9a227">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&family=Barlow+Condensed:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&family=Barlow+Condensed:wght@400;700;900&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&family=Barlow+Condensed:wght@400;700;900&display=swap"></noscript>
+
+<link rel="stylesheet" href="src/css/cookie-consent.css">
+
+<style>
+    :root {
+        --gold: #c9a227;
+        --gold-light: #e8be3a;
+        --black: #0a0a0a;
+        --dark: #111111;
+        --dark-card: #181818;
+        --border: #2a2a2a;
+        --text: #f0f0f0;
+        --text-muted: #888888;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+        margin: 0; padding: 0;
+        background: var(--black);
+        color: var(--text);
+        font-family: 'Barlow', sans-serif;
+    }
+    .topo {
+        display: flex; align-items: center; justify-content: space-between;
+        max-width: 760px; margin: 0 auto;
+        padding: 28px 24px 0;
+    }
+    .logo {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 26px;
+        letter-spacing: .02em;
+        text-decoration: none;
+    }
+    .logo .plus { color: #fff; }
+    .logo .accent { color: var(--gold); }
+    .voltar {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 13px;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: color .2s, border-color .2s;
+    }
+    .voltar:hover { color: var(--gold-light); border-color: var(--gold-light); }
+
+    main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 28px 24px 80px;
+    }
+    h1 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 900;
+        font-size: clamp(28px, 5vw, 40px);
+        letter-spacing: .02em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin: 8px 0 4px;
+    }
+    .atualizado {
+        color: var(--text-muted);
+        font-size: 13.5px;
+        margin: 0 0 32px;
+    }
+    h2 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        color: var(--text);
+        border-left: 3px solid var(--gold);
+        padding-left: 12px;
+        margin: 36px 0 12px;
+    }
+    p, li {
+        font-size: 15.5px;
+        line-height: 1.7;
+        color: var(--text-muted);
+    }
+    strong { color: var(--text); font-weight: 600; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin-bottom: 6px; }
+
+    .card {
+        background: var(--dark-card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 18px 20px;
+        margin: 16px 0;
+    }
+    .card p:last-child { margin-bottom: 0; }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+        font-size: 14.5px;
+    }
+    th, td {
+        text-align: left;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--border);
+        color: var(--text-muted);
+    }
+    th {
+        color: var(--gold-light);
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    .btn-manage {
+        display: inline-block;
+        background: var(--gold);
+        color: var(--black);
+        padding: 13px 28px;
+        border-radius: 50px;
+        border: none;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 14.5px;
+        font-weight: 700;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background .2s, transform .2s;
+        margin-top: 8px;
+    }
+    .btn-manage:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+    .whats {
+        color: var(--gold-light);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-color .2s;
+    }
+    .whats:hover { border-color: var(--gold-light); }
+</style>
+</head>
+<body>
+
+    <div class="topo">
+        <a href="index.html" class="logo"><span class="plus">90</span><span class="accent">+3</span></a>
+        <a href="index.html" class="voltar">← Voltar para o início</a>
+    </div>
+
+    <main>
+        <h1>Política de Privacidade e Cookies</h1>
+        <p class="atualizado">Última atualização: agosto de 2026</p>
+
+        <p>
+            Esta página explica, de forma simples, quais dados a <strong>90+3 Camisas Tailandesas</strong>
+            coleta quando você visita o site, para que servem os cookies que usamos e como você pode
+            aceitar, rejeitar ou mudar de ideia sobre isso a qualquer momento — conforme a
+            <strong>Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018)</strong>.
+        </p>
+
+        <h2>O que são cookies</h2>
+        <p>
+            Cookies são pequenos arquivos guardados no seu navegador que ajudam um site a lembrar
+            preferências e a funcionar corretamente entre uma visita e outra — por exemplo, manter os
+            itens na sua sacola de compras.
+        </p>
+
+        <h2>Quais cookies usamos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Para que serve</th>
+                    <th>Pode ser rejeitado?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Essenciais</td>
+                    <td>Fazer o site funcionar: sacola de compras, navegação entre páginas, preferência de cookies.</td>
+                    <td>Não — são necessários para o site operar.</td>
+                </tr>
+                <tr>
+                    <td>Opcionais</td>
+                    <td>Entender como as pessoas navegam no site, para melhorar catálogo e ofertas.</td>
+                    <td>Sim, a qualquer momento.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Como gerenciar sua escolha</h2>
+        <p>
+            Na sua primeira visita, um banner pergunta se você aceita ou rejeita os cookies opcionais.
+            Sua escolha fica salva no navegador. Para ver ou trocar essa escolha depois, use o botão
+            abaixo ou o ícone 🍪 que fica fixo no canto da tela:
+        </p>
+        <button type="button" class="btn-manage" id="btn-gerenciar-cookies">Gerenciar minhas preferências de cookies</button>
+
+        <h2>Seus direitos (LGPD)</h2>
+        <div class="card">
+            <p>Você pode, a qualquer momento, solicitar:</p>
+            <ul>
+                <li>Confirmação de quais dados temos sobre você;</li>
+                <li>Correção de dados incompletos ou desatualizados;</li>
+                <li>Exclusão dos seus dados, quando aplicável;</li>
+                <li>Revogação do consentimento para cookies opcionais.</li>
+            </ul>
+        </div>
+
+        <h2>Contato</h2>
+        <p>
+            Dúvidas sobre esta política ou sobre seus dados? Fale com a gente pelo WhatsApp:
+            <a href="https://wa.me/5515991617508?text=Olá%2C%20tenho%20uma%20dúvida%20sobre%20a%20política%20de%20privacidade" class="whats" target="_blank" rel="noopener noreferrer">(15) 99161-7508</a>.
+        </p>
+
+        <h2>Alterações desta política</h2>
+        <p>
+            Esta política pode ser atualizada de tempos em tempos para refletir mudanças no site ou na
+            legislação. A data no topo desta página sempre indica a versão mais recente.
+        </p>
+    </main>
+
+    <script src="src/js/cookie-consent.js" defer></script>
+    <script>
+        document.getElementById('btn-gerenciar-cookies').addEventListener('click', function () {
+            var btn = document.getElementById('cc-reopen');
+            if (btn) { btn.click(); }
+        });
+    </script>
+</body>
+</html>
