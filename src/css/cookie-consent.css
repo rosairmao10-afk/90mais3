@@ -1,0 +1,175 @@
+/* =========================================================
+   90+3 — Banner de Gerenciamento de Cookies (LGPD)
+   =========================================================
+   Ajuste só o bloco de variáveis abaixo para bater 100% com
+   a paleta real do site (cores extraídas do seu CSS/estilos):
+   ========================================================= */
+:root {
+  --cc-bg: #181818;              /* = --dark-card do site */
+  --cc-bg-soft: #222222;         /* = --mid do site */
+  --cc-text: #f0f0f0;            /* = --text do site */
+  --cc-muted: #888888;           /* = --text-muted do site */
+  --cc-accent: #c9a227;          /* = --gold do site */
+  --cc-accent-hover: #e8be3a;    /* = --gold-light do site */
+  --cc-whatsapp: #1ece6a;        /* = --green do site */
+  --cc-border: #2a2a2a;          /* = --border do site */
+  --cc-radius: 14px;             /* = --radius do site */
+  --cc-radius-pill: 999px;
+  --cc-font: 'Barlow Condensed', 'Barlow', sans-serif; /* = fontes do site */
+  --cc-shadow: 0 8px 32px rgba(0, 0, 0, 0.45); /* = --shadow-card do site */
+  --cc-z: 999999;
+}
+
+/* ---------- Overlay opcional (leve, não bloqueia navegação) ---------- */
+.cc-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: calc(var(--cc-z) - 1);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.cc-overlay.cc-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ---------- Banner principal ---------- */
+.cc-banner {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translate(-50%, 140%);
+  width: min(680px, calc(100% - 32px));
+  background: var(--cc-bg);
+  color: var(--cc-text);
+  border: 1px solid var(--cc-border);
+  border-radius: var(--cc-radius);
+  box-shadow: var(--cc-shadow);
+  z-index: var(--cc-z);
+  font-family: var(--cc-font);
+  padding: 20px 22px;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cc-banner.cc-visible {
+  transform: translate(-50%, 0);
+}
+
+.cc-banner__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.cc-banner__icon {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.cc-banner__text strong {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.cc-banner__text p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--cc-muted);
+}
+.cc-banner__text a {
+  color: var(--cc-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cc-banner__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cc-btn {
+  flex: 1 1 auto;
+  min-width: 120px;
+  padding: 11px 20px;
+  border-radius: var(--cc-radius-pill);
+  border: 1px solid transparent;
+  font-family: var(--cc-font);
+  font-weight: 600;
+  font-size: 13.5px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+}
+.cc-btn:active {
+  transform: scale(0.97);
+}
+
+.cc-btn--primary {
+  background: var(--cc-accent);
+  color: #0a0a0a; /* = --black do site, igual ao .btn-primary original */
+}
+.cc-btn--primary:hover {
+  background: var(--cc-accent-hover);
+}
+
+.cc-btn--ghost {
+  background: transparent;
+  border-color: var(--cc-border);
+  color: var(--cc-text);
+}
+.cc-btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* ---------- Botão flutuante para reabrir preferências ---------- */
+.cc-reopen {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--cc-border);
+  background: var(--cc-bg);
+  color: var(--cc-text);
+  font-size: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  z-index: var(--cc-z);
+  transition: transform 0.15s ease;
+}
+.cc-reopen.cc-show {
+  display: flex;
+}
+.cc-reopen:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 480px) {
+  .cc-banner {
+    bottom: 0;
+    left: 0;
+    transform: translateY(140%);
+    width: 100%;
+    border-radius: var(--cc-radius) var(--cc-radius) 0 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  .cc-banner.cc-visible {
+    transform: translateY(0);
+  }
+  .cc-btn {
+    min-width: 0;
+  }
+}
